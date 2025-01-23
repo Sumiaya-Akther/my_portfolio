@@ -1,0 +1,422 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+  }
+ 
+  nav{
+   background-color: rgb(44,58,79);
+  }
+  body{
+    background-color: rgb(188, 195, 211);
+  }
+  .navbar, .banner,
+
+  .about, .skills,
+   .education-section,
+   .contact-section,
+   .footer{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .logo {
+    color: rgb(170,181,204);
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+
+
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+  
+  .nav-links li a:hover {
+    /* text-decoration: underline; */
+    color: rgb(170,181,204);
+  }
+  
+  .menu-toggle {
+    display: none;
+    background: none;
+    color: black;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  /* banner css */
+
+  .banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+  
+  }
+  .banner h1{
+    font-size: 3rem;
+    color: #345783;
+  }
+  .banner h2{
+    font-size: 1.5rem;
+    color: #345783;
+  }
+  .banner h4{
+    font-size: 2rem;
+    color: rgb(44, 58, 79);
+  }
+  .banner p{
+    font-size: 1.2rem;
+    color: #345783;
+    line-height: 25px;
+  }
+  .banner-description{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+  .btn-1{
+    background-color: rgb(44, 58, 79);
+    padding: 12px 25px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    display: inline-block;
+    cursor: pointer;
+    
+  }
+  .btn-2{
+    background-color: rgb(170,181,204);
+    padding: 12px 25px;
+    border-radius: 8px;
+    border: 2px solid rgb(44, 58, 79);
+    font-size: 1rem;
+  }
+  .btn-2:hover{
+    background-color: rgb(44, 58, 79);
+  }
+  .btn-2 a:hover{
+    color: white;
+  }
+  .btn-1 a{
+    color: aliceblue;
+  }
+ .btn-2 a{
+    color: #345783;
+  }
+  .banner i{
+    color: rgb(44, 58, 79);
+    font-size: 1.4rem;
+  }
+.banner img{
+  width: 360px;
+  height: 350px;
+  border-radius: 8px;
+}
+
+/* about css */
+.about img{
+  width: 140px;
+  border-radius: 50%;
+}
+.about{
+  padding-top: 150px;
+  padding-bottom: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+
+}
+.about h4{
+  font-size: 1.8rem;
+  color: rgb(44, 58, 79);
+}
+.about p{
+  font-size: 1.2rem;
+  color: #345783;
+  line-height: 25px;
+}
+/* skills css */
+
+.skills-section {
+  text-align: center;
+  padding-bottom: 150px;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 70px;
+  color: rgb(44, 58, 79);
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  color: #345783;
+  font-size: 1rem;
+}
+
+.skills-left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.skill span {
+  width: 70px;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 8px;
+  background: #345783;
+  margin: 0 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background-color: rgb(44, 58, 79);
+}
+
+.percentage {
+  font-size: 0.9rem;
+}
+
+.skills-right {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+}
+
+.circle-container {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  border: 4px solid #444;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+  font-size: 1.1rem;
+  font-size: 0.9rem;
+  background: conic-gradient(
+    rgb(44, 58, 79) calc(var(--percentage, 0) * 1%),
+    #345783 calc(var(--percentage, 0) * 1%)
+  );
+}
+
+.circle-container:after {
+  content: "";
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  /* background: #000; */
+  border-radius: 50%;
+}
+  
+/* education css */
+.education-section {
+  text-align: center;
+  padding-bottom: 150px;
+}
+
+.education-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+  color: rgb(44, 58, 79);
+}
+
+.education-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 20px;
+}
+
+.education-item {
+  background-color: rgb(44, 58, 79);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.education-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.year {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(58, 150, 231);
+  
+  margin-right: 20px;
+}
+
+.details h3 {
+  font-size: 1.5rem;
+  color: aliceblue;
+}
+
+.details p {
+  margin: 5px 0 0;
+  font-size: 1.2rem;
+  color: rgb(58, 150, 231);
+}
+
+/* contact me css */
+
+
+.contact-section {
+  text-align: center;
+  padding-bottom: 150px;
+}
+
+.contact-section h1 {
+  font-size: 2rem;
+  margin-bottom: 70px;
+  color: rgb(44, 58, 79);
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 20px;
+  border: 2px solid rgb(44, 58, 79);
+  border-radius: 30px;
+  color: #345783;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.contact-item:hover {
+  background-color: rgb(44, 58, 79);
+  color: rgb(58, 150, 231);
+}
+
+/* footer css */
+
+footer{
+  background-color: rgb(44,58,79);
+  padding: 60px;
+  text-align: center;
+  color: white;
+  font-size: 1.1rem;
+}
+
+
+
+  /* Responsive styles */
+  @media (max-width: 576px) {
+    .menu-toggle {
+      display: block;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: #333;
+      position: absolute;
+      top: 73px;
+      right: 0;
+      width: 180px;
+      padding: 1rem;
+      border-radius: 0px 0px 0px 6px;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+    .banner{
+      flex-direction: column-reverse;
+      gap: 10px;
+    }
+    .banner-description{
+      text-align: center;
+    }
+    .banner h1{
+      font-size: 2rem;
+    }
+    .banner h2{
+      font-size: 1.3rem;
+    }
+    .banner h4{
+      font-size: 1.7rem;
+    }
+    .banner img{
+      border-radius: 50%;
+      width: 250px;
+      height: 250px;
+    }
+    .about{
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+    .about p{
+      line-height: 20px;
+      font-size: 1rem;
+    }
+    .section-title{
+      font-size: 2rem;
+    }
+    .education-section h1{
+      font-size: 2rem;
+    }
+    .education-container{
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .details h3 {
+      font-size: 1.3rem;
+    }
+    .details p{
+      font-size: 1rem;
+    }
+  }
+  
