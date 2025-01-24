@@ -96,32 +96,29 @@
   }
   .btn-1{
     background-color: rgb(44, 58, 79);
-    padding: 12px 25px;
+    padding: 13px 28px;
     border-radius: 8px;
     border: none;
-    font-size: 1rem;
+    font-size: 1.1rem;
     display: inline-block;
     cursor: pointer;
     
   }
   .btn-2{
-    background-color: rgb(170,181,204);
+    background-color: rgb(188,195,211);
     padding: 12px 25px;
     border-radius: 8px;
     border: 2px solid rgb(44, 58, 79);
-    font-size: 1rem;
+    font-size: 1.1rem;
+    color: #345783;
+    cursor: pointer;
   }
   .btn-2:hover{
     background-color: rgb(44, 58, 79);
-  }
-  .btn-2 a:hover{
-    color: white;
+    color: aliceblue;
   }
   .btn-1 a{
     color: aliceblue;
-  }
- .btn-2 a{
-    color: #345783;
   }
   .banner i{
     color: rgb(44, 58, 79);
