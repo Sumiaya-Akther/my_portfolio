@@ -15,3 +15,8 @@ document.addEventListener("DOMContentLoaded", () => {
       circle.style.setProperty("--percentage", percentage);
     });
   });
+
+
+  // project
+
+  
