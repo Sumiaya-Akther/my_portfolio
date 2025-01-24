@@ -411,7 +411,7 @@ footer{
     .nav-links {
       display: none;
       flex-direction: column;
-      background-color: #333;
+      background-color: rgb(44, 58, 79);
       position: absolute;
       top: 73px;
       right: 0;
@@ -419,7 +419,9 @@ footer{
       padding: 1rem;
       border-radius: 0px 0px 0px 6px;
     }
-  
+    .nav-links li a{
+      color: aliceblue;
+    }
     .nav-links.active {
       display: flex;
     }
