@@ -17,8 +17,8 @@
   .about, .skills,
    .education-section,
    .contact-section,
-   .project,
-   .footer{
+   .project-container
+   {
     width: 80%;
     margin: 0 auto;
   }
@@ -254,14 +254,13 @@
 .project-container{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
-
+  gap: 30px;
 }
 .project-card{
-  width: 300px;
-  height: 380px;
+  /* width: 300px;
+  height: 380px; */
   background-color: rgb(44,58,79);
-  padding: 30px;
+  padding: 25px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -403,7 +402,7 @@ footer{
 
 
   /* Responsive styles */
-  @media (max-width: 576px) {
+  @media screen  and (max-width: 576px) {
     .menu-toggle {
       display: block;
     }
@@ -477,5 +476,9 @@ footer{
     .project-card{
       width: 90%;
     }
+  }
+
+  @media screen {
+    
   }
   
